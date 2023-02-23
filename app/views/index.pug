@@ -1,0 +1,10 @@
+doctype html
+html
+    if isLogin === true
+        h2 Hello! #{loginUser}
+        a(href="/auth/signout") Sign out
+    else 
+        h2 Welcome! Visitor
+        a(href="/auth/signin") Sign in 
+        span(style="padding: 0 5px 0 5px") or
+        a(href="/auth/signup") Sign up

@@ -1,0 +1,11 @@
+CREATE DATABASE Assignment CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+USE Assignment;
+
+CREATE TABLE User (
+    id INT NOT NULL AUTO_INCREMENT,
+    password VARCHAR(100) NOT NULL,
+    name VARCHAR(32) NOT NULL,
+    email VARCHAR(200) NOT NULL,
+    PRIMARY KEY(id)
+);

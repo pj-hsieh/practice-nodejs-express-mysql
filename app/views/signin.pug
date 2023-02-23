@@ -1,0 +1,17 @@
+doctype html
+html
+    h2 Signin
+    form(action="", method="post") 
+        div
+            label(for="email") Email
+            input(name="email", type="text", maxlength=200, required=true, value=email)
+        div
+            label(for="password") Password
+            input(name="password", type="password", maxlength=20, required=true)
+        div
+            input(type="submit", value="Sign in")
+            a(href="./signup" style="padding-left:10px") Sign up
+
+    ul(style="padding-top:10px")
+        each msg in errors ? errors : []
+            li=msg
